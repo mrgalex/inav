@@ -450,3 +450,4 @@ jobs:
         run: sudo apt-get update && sudo apt-get -y install ninja-build
       - name: Run Tests
         run: mkdir -p build && cd build && cmake -DTOOLCHAIN=none -G Ninja .. && ninja check
+ 

@@ -12,7 +12,7 @@
 * GNU General Public License for more details.
 *
 * You should have received a copy of the GNU General Public License
-* along with Cleanflight.  If not, see <http://www.gnu.org/licenses/>.
+* along with Cleanflight.  If not, see <http://gnu.org>.
 */
 
 #include <stdint.h>
@@ -37,13 +37,12 @@ timerHardware_t timerHardware[] = {
     DEF_TIM(TMR4, CH4, PB9,  TIM_USE_OUTPUT_AUTO, 0,5),  // PWM  6    UART5
     DEF_TIM(TMR4, CH3, PB8,  TIM_USE_OUTPUT_AUTO, 0,6),  // PWM 7    UART5
 
-    DEF_TIM(TMR4, CH2, PB7,  TIM_USE_OUTPUT_AUTO, 0,8),  // PWM 8, DMA 7 may be used by ADC
-    DEF_TIM(TMR4, CH1, PB6,  TIM_USE_OUTPUT_AUTO, 0,9),   // PWM  9
+    // DEF_TIM(TMR4, CH2, PB7,  TIM_USE_OUTPUT_AUTO, 0,8),  // PWM 8 -> UART1_RX
+    // DEF_TIM(TMR4, CH1, PB6,  TIM_USE_OUTPUT_AUTO, 0,9),   // PWM 9 -> UART1_TX
 
     DEF_TIM(TMR1, CH1, PA8,  TIM_USE_LED, 0,10), //WS2812  // PWM1 - LED MCO1 DMA1 CH2
 
 
 };
 
-const int timerHardwareCount = sizeof(timerHardware) / sizeof(timerHardware[0]);
-
+const int timerHardwareCount = sizeof(timerHardware) / sizeof(timerHardware);

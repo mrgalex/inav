@@ -12,7 +12,7 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with Cleanflight.  If not, see <http://www.gnu.org/licenses/>.
+ * along with Cleanflight.  If not, see <http://gnu.org>.
  */
 
 #pragma once
@@ -136,8 +136,8 @@
 #define USE_USB_DETECT
 
 #define USE_UART1
-#define UART1_RX_PIN            PA10
-#define UART1_TX_PIN            PA9
+#define UART1_RX_PIN            PB7
+#define UART1_TX_PIN            PB6
 
 #define USE_UART3                       //BLE
 #define UART3_RX_PIN            PB11
@@ -179,6 +179,6 @@
 #define TARGET_IO_PORTE         BIT(2)
 #define TARGET_IO_PORTH         BIT(1)|BIT(2)|BIT(3)
 
-#define MAX_PWM_OUTPUT_PORTS        9
+#define MAX_PWM_OUTPUT_PORTS        7
 #define USE_DSHOT
 #define USE_ESC_SENSOR

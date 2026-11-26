@@ -34,16 +34,15 @@ timerHardware_t timerHardware[] = {
 
     DEF_TIM(TMR2, CH1, PA15,  TIM_USE_OUTPUT_AUTO, 0,4), // PWM 5 
 
-    DEF_TIM(TMR4, CH4, PB9,  TIM_USE_OUTPUT_AUTO, 0,5),  // PWM  6    UART5
-    DEF_TIM(TMR4, CH3, PB8,  TIM_USE_OUTPUT_AUTO, 0,6),  // PWM 7    UART5
+    // DEF_TIM(TMR4, CH4, PB9,  TIM_USE_OUTPUT_AUTO, 0,5),  // PWM  6 -> UART5_TX
+    // DEF_TIM(TMR4, CH3, PB8,  TIM_USE_OUTPUT_AUTO, 0,6),  // PWM 7 -> UART5_RX
 
-    // DEF_TIM(TMR4, CH2, PB7,  TIM_USE_OUTPUT_AUTO, 0,8),  // PWM 8 -> UART1_RX
-    // DEF_TIM(TMR4, CH1, PB6,  TIM_USE_OUTPUT_AUTO, 0,9),   // PWM 9 -> UART1_TX
+    DEF_TIM(TMR4, CH2, PB7,  TIM_USE_OUTPUT_AUTO, 0,8),  // PWM 8
+    DEF_TIM(TMR4, CH1, PB6,  TIM_USE_OUTPUT_AUTO, 0,9),   // PWM  9
 
     DEF_TIM(TMR1, CH1, PA8,  TIM_USE_LED, 0,10), //WS2812  // PWM1 - LED MCO1 DMA1 CH2
 
 
 };
 
-const int timerHardwareCount = sizeof(timerHardware) / sizeof(timerHardware[0]);
-
+const int timerHardwareCount = sizeof(timerHardware) / sizeof(timerHardware);

@@ -136,18 +136,22 @@
 #define USE_USB_DETECT
 
 #define USE_UART1
-#define UART1_RX_PIN            PB7
-#define UART1_TX_PIN            PB6
+#define UART1_RX_PIN            PA10
+#define UART1_TX_PIN            PA9
 
 #define USE_UART3                       //BLE
 #define UART3_RX_PIN            PB11
 #define UART3_TX_PIN            PB10
 
+#define USE_UART5
+#define UART5_RX_PIN            PB8
+#define UART5_TX_PIN            PB9
+
 #define USE_UART7                      //SBUS
 #define UART7_RX_PIN            PB3
 #define UART7_TX_PIN            PB4
 
-#define SERIAL_PORT_COUNT       4
+#define SERIAL_PORT_COUNT       5
 
 #define DEFAULT_RX_TYPE         RX_TYPE_SERIAL
 #define SERIALRX_PROVIDER       SERIALRX_CRSF
